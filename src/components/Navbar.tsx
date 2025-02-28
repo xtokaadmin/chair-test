@@ -9,7 +9,7 @@ interface NavbarProps {
 }
 
 const Navbar = ({
-  logo = "Cha",
+  logo = "Chair",
   navItems = [
     { label: "Home", href: "/" },
     { label: "Commercial", href: "/commercial" },
@@ -25,8 +25,7 @@ const Navbar = ({
       <div className="container mx-auto px-4 h-full flex items-center justify-between">
         {/* Logo */}
         <Link to="/" className="flex items-center">
-          <span className="text-2xl font-bold text-blue-600">{logo}</span>
-          <span className="ml-1 text-sm text-gray-500">Aircraft</span>
+          <span className="text-2xl font-bold text-red-600">{logo}</span>
         </Link>
 
         {/* Desktop Navigation */}
@@ -35,12 +34,12 @@ const Navbar = ({
             <Link
               key={index}
               to={item.href}
-              className="text-gray-700 hover:text-blue-600 transition-colors"
+              className="text-gray-700 hover:text-red-600 transition-colors"
             >
               {item.label}
             </Link>
           ))}
-          <Button className="bg-blue-600 hover:bg-blue-700 text-white">
+          <Button className="bg-red-600 hover:bg-red-700 text-white">
             Book a Flight
           </Button>
         </div>
@@ -66,13 +65,13 @@ const Navbar = ({
               <Link
                 key={index}
                 to={item.href}
-                className="text-gray-700 hover:text-blue-600 transition-colors py-2"
+                className="text-gray-700 hover:text-red-600 transition-colors py-2"
                 onClick={() => setMobileMenuOpen(false)}
               >
                 {item.label}
               </Link>
             ))}
-            <Button className="bg-blue-600 hover:bg-blue-700 text-white w-full">
+            <Button className="bg-red-600 hover:bg-red-700 text-white w-full">
               Book a Flight
             </Button>
           </div>

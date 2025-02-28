@@ -5,16 +5,16 @@ import Navbar from "./Navbar";
 // Create placeholder components since the actual components aren't properly exported yet
 const HeroSection = () => {
   return (
-    <section className="h-[800px] w-full bg-blue-50 flex items-center justify-center relative overflow-hidden">
+    <section className="h-[800px] w-full bg-red-50 flex items-center justify-center relative overflow-hidden">
       <div className="container mx-auto px-4 z-10 text-center">
-        <h1 className="text-5xl md:text-6xl font-bold text-blue-900 mb-4">
+        <h1 className="text-5xl md:text-6xl font-bold text-red-900 mb-4">
           Experience Aviation Excellence
         </h1>
-        <p className="text-xl text-blue-700 max-w-2xl mx-auto mb-8">
+        <p className="text-xl text-red-700 max-w-2xl mx-auto mb-8">
           Discover the future of flight with Cha Aircraft's innovative and
           luxurious fleet
         </p>
-        <button className="bg-blue-600 hover:bg-blue-700 text-white font-medium py-3 px-8 rounded-md transition-colors">
+        <button className="bg-red-600 hover:bg-red-700 text-white font-medium py-3 px-8 rounded-md transition-colors">
           Explore Our Fleet
         </button>
       </div>
@@ -71,7 +71,7 @@ const AircraftCategoriesSection = () => {
 
           {/* Private Aircraft Column */}
           <div className="bg-gray-50 rounded-lg p-8 shadow-md hover:shadow-lg transition-shadow">
-            <h3 className="text-2xl font-bold text-blue-800 mb-4">
+            <h3 className="text-2xl font-bold text-red-800 mb-4">
               Private Aircraft
             </h3>
             <img
@@ -95,7 +95,7 @@ const AircraftCategoriesSection = () => {
                 <span className="mr-2">✓</span> Concierge maintenance services
               </li>
             </ul>
-            <button className="bg-blue-600 hover:bg-blue-700 text-white font-medium py-2 px-6 rounded-md transition-colors">
+            <button className="bg-red-600 hover:bg-red-700 text-white font-medium py-2 px-6 rounded-md transition-colors">
               Explore Private Jets
             </button>
           </div>
